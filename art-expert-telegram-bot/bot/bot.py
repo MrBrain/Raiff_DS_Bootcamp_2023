@@ -13,6 +13,7 @@ TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "YOUR_TOKEN")
 client = HTTPClient(host="https://art-expert-fastapi.fly.dev", port=None)
 
 
+
 async def hello(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text(f'Hello {update.effective_user.first_name}')
 
